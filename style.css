@@ -55,7 +55,12 @@ nav a.ativo {
   gap: 20px;
   margin-bottom: 30px;
 }
+.Cardápio-pedido {
 
+
+text-align: center;
+
+}
 .item {
   background-color: #fff;
   border-radius: 10px;
