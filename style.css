@@ -164,3 +164,39 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
+/* === FORMULÁRIO DO CLIENTE === */
+.dados-cliente {
+  margin: 25px 0;
+  text-align: left;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #e67e22;
+  box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+}

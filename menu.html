@@ -42,17 +42,35 @@
     </section>
 
     <section id="carrinho">
-      <h2>🛒 Seu Carrinho</h2>
-      <ul id="lista-itens"></ul>
-      <p><strong>Total: R$ <span id="total">0.00</span></strong></p>
+  <h2>🛒 Seu Carrinho</h2>
+  <ul id="lista-itens"></ul>
+  <p><strong>Total: R$ <span id="total">0.00</span></strong></p>
 
-      <div class="endereco-box">
-        <label for="endereco">📍 Endereço de entrega:</label>
-        <textarea id="endereco" placeholder="Ex: Rua Principal, nº 123 - Bairro Centro, Tutóia/MA, Seu Nome Completo" rows="3"></textarea>
-      </div>
+  <div class="dados-cliente">
+    <div class="campo">
+      <label for="nome">👤 Nome completo:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome completo">
+    </div>
 
-      <button id="btn-finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
-    </section>
+    <div class="campo">
+      <label for="telefone">📱 Telefone de contato (WhatsApp):</label>
+      <input type="tel" id="telefone" placeholder="(98) 91234-5678" maxlength="15" oninput="mascararTelefone(this)">
+    </div>
+
+    <div class="campo">
+      <label for="endereco">📍 Endereço de entrega:</label>
+      <textarea id="endereco" placeholder="Ex: Rua Principal, nº 123 - Bairro Centro, Tutóia/MA" rows="3"></textarea>
+    </div>
+
+    <div class="campo">
+      <label for="observacoes">📝 Observações:</label>
+      <textarea id="observacoes" placeholder="Ex: Sem pimenta, entregar rápido..." rows="2"></textarea>
+    </div>
+  </div>
+
+  <button id="btn-finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
+</section>
+
   </main>
 
   <footer>
